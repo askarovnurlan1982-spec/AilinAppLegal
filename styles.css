@@ -1,0 +1,278 @@
+:root {
+  --ink: #15201c;
+  --muted: #64706a;
+  --paper: #fbfcf9;
+  --surface: #ffffff;
+  --line: #dfe5df;
+  --accent: #176b4d;
+  --accent-soft: #e8f3ed;
+  --notice: #fff8df;
+  --notice-line: #e7d898;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 3px;
+}
+
+.site-header,
+main,
+footer {
+  width: min(1120px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+.site-header {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  font-weight: 750;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.brand-mark {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  color: white;
+  background: var(--accent);
+  font-family: Georgia, serif;
+}
+
+.contact-link {
+  font-weight: 650;
+}
+
+.hero {
+  padding: 88px 0 68px;
+  border-bottom: 1px solid var(--line);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+h1 {
+  max-width: 720px;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3.25rem, 8vw, 6.6rem);
+  font-weight: 500;
+}
+
+.intro {
+  max-width: 680px;
+  margin: 28px 0 0;
+  color: var(--muted);
+  font-size: clamp(1.08rem, 2vw, 1.28rem);
+}
+
+.updated {
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.policy-layout {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 700px);
+  gap: clamp(48px, 9vw, 120px);
+  padding: 70px 0 110px;
+  justify-content: space-between;
+}
+
+aside {
+  align-self: start;
+  position: sticky;
+  top: 28px;
+}
+
+aside > p {
+  margin: 0 0 14px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+nav {
+  display: grid;
+  gap: 9px;
+}
+
+nav a {
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: var(--accent);
+}
+
+article section {
+  scroll-margin-top: 28px;
+  padding: 36px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+article h2 {
+  margin: 0 0 18px;
+  font-size: clamp(1.65rem, 3vw, 2.1rem);
+}
+
+article p,
+article li {
+  color: #3f4a45;
+}
+
+article ul {
+  padding-left: 1.25rem;
+}
+
+article li + li {
+  margin-top: 10px;
+}
+
+.notice {
+  padding: 20px 22px;
+  border: 1px solid var(--notice-line);
+  border-radius: 14px;
+  background: var(--notice);
+}
+
+.notice strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.notice p {
+  margin: 0;
+  font-size: 0.94rem;
+}
+
+.contact-card {
+  margin-top: 44px;
+  padding: clamp(28px, 5vw, 48px);
+  border: 0;
+  border-radius: 22px;
+  background: var(--accent-soft);
+}
+
+.contact-card h2 {
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  margin: 0;
+}
+
+.company-address {
+  padding-top: 22px;
+  font-size: 0.9rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 0 36px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .site-header,
+  main,
+  footer {
+    width: min(100% - 28px, 680px);
+  }
+
+  .hero {
+    padding: 64px 0 50px;
+  }
+
+  .policy-layout {
+    display: block;
+    padding: 24px 0 72px;
+  }
+
+  aside {
+    position: static;
+    padding: 0 0 24px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  aside > p {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    scrollbar-width: thin;
+  }
+
+  nav a {
+    flex: 0 0 auto;
+    padding: 7px 11px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
