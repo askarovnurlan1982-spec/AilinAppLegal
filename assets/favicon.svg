@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Ailin">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="26%" r="62%">
+      <stop offset="0%" stop-color="#eaf7f8"/>
+      <stop offset="42%" stop-color="#7cc0c9"/>
+      <stop offset="100%" stop-color="#2a606f"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#glow)"/>
+  <circle cx="32" cy="17" r="7.5" fill="#f4fbfc" opacity="0.92"/>
+  <g fill="#eef8f9" opacity="0.95">
+    <path d="M32 50c0-8.5-4.2-14.4-11.6-16.6C20.9 41.4 25.2 47 32 50z"/>
+    <path d="M32 50c0-8.5 4.2-14.4 11.6-16.6C43.1 41.4 38.8 47 32 50z"/>
+  </g>
+  <rect x="30.9" y="36" width="2.2" height="15" rx="1.1" fill="#eef8f9" opacity="0.95"/>
+  <ellipse cx="32" cy="52.5" rx="13" ry="2.6" fill="#eef8f9" opacity="0.28"/>
+</svg>
