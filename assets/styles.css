@@ -130,17 +130,13 @@ section + section { padding-top: 0; }
   font-size: 1.0625rem;
 }
 
-.brand .mark {
-  width: 26px;
-  height: 26px;
-  border-radius: 8px;
-  background: var(--accent);
-  display: grid;
-  place-items: center;
-  color: var(--on-accent);
-  font-size: 0.8125rem;
-  font-weight: 700;
+.brand-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  display: block;
   flex: none;
+  object-fit: cover;
 }
 
 .site-nav {
