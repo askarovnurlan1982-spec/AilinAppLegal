@@ -2,8 +2,9 @@
 
 Static, dependency-free site that satisfies the Apple App Store submission
 requirements for public URLs. No build step, no JavaScript, no external
-requests (no CDN fonts, no analytics, no trackers) — consistent with the
-"Data Not Collected" App Privacy answer.
+requests (no CDN fonts or website analytics/trackers) — the iOS app's limited
+product analytics are described in the Privacy Policy, consistent with the
+current App Privacy disclosures.
 
 Deploy the contents of this directory to the web root of `ailinlabs.com`.
 
@@ -13,12 +14,12 @@ Deploy the contents of this directory to the web root of `ailinlabs.com`.
 |---|---|
 | `index.html` | Marketing / landing page (EN) — includes the auto-renewable subscription disclosure |
 | `support.html` | Support page (EN) — operator, contacts, subscriptions, refunds, privacy requests, FAQ |
-| `privacy.html` | Privacy Policy v1.0 (EN) |
-| `terms.html` | Terms of Use v1.0 (EN) |
+| `privacy.html` | Privacy Policy v1.1 (EN) |
+| `terms.html` | Terms of Use v1.1 (EN) |
 | `ru/index.html` | Landing page (RU) |
 | `ru/support.html` | Support page (RU) |
-| `ru/privacy.html` | Политика конфиденциальности v1.0 (RU) |
-| `ru/terms.html` | Условия использования v1.0 (RU) |
+| `ru/privacy.html` | Политика конфиденциальности v1.1 (RU) |
+| `ru/terms.html` | Условия использования v1.1 (RU) |
 | `404.html` | Not-found page |
 | `assets/styles.css` | Single stylesheet; palette mirrors the in-app Mist/Night themes, light + dark |
 | `assets/favicon.svg`, `favicon-32.png`, `apple-touch-icon.png`, `icon-512.png` | Icons, derived from the app icon |
@@ -26,11 +27,10 @@ Deploy the contents of this directory to the web root of `ailinlabs.com`.
 | `CNAME` | `ailinlabs.com` (GitHub Pages custom domain) |
 | `.nojekyll` | Disables Jekyll processing on GitHub Pages |
 
-Legal text is reproduced verbatim from
-`AilinAppLegal/docs/AILIN_{PRIVACY_POLICY,TERMS_OF_USE}_{EN,RU}_v1.0.md`.
-Only structure was restored (lists, tables, headings) and the document
-placeholders were filled. **If the source documents change, update these
-pages — they are the public copy of record.**
+Legal text is maintained directly in these public HTML pages. Version 1.1 adds
+the current analytics disclosures from `docs/analytics_events.md`. **If the
+source product or legal documents change, update these pages — they are the
+public copy of record.**
 
 ## App Store Connect URL map
 
@@ -57,7 +57,7 @@ grep -rn 'class="todo"' public/
 
 Also confirm before publishing:
 
-- **Effective date** is set to **July 31, 2026** on all four legal pages
+- **Effective date** is set to **August 20, 2026** on all four legal pages
   (`Effective date` / `Дата вступления в силу`). Change it if the intended
   effective date differs.
 - **Operator name** is `Ailin Labs LLC` throughout. It must match the legal

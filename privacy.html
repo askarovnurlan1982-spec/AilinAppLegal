@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — Ailin</title>
-<meta name="description" content="How Ailin handles information. The Ailin iOS app requires no account, has no analytics, advertising or tracking, and stores progress and preferences on your device.">
+<meta name="description" content="How Ailin handles information, including privacy-preserving product analytics and crash reporting. Ailin requires no account and has no advertising or cross-app tracking.">
 <link rel="canonical" href="https://ailinlabs.com/privacy.html">
 <link rel="alternate" hreflang="en" href="https://ailinlabs.com/privacy.html">
 <link rel="alternate" hreflang="ru" href="https://ailinlabs.com/ru/privacy.html">
@@ -38,9 +38,9 @@
 
 <div class="doc-meta">
   <dl>
-    <dt>Version</dt><dd>1.0</dd>
-    <dt>Status</dt><dd>FINAL — approved for Ailin iOS v1.0</dd>
-    <dt>Effective date</dt><dd>July 31, 2026</dd>
+    <dt>Version</dt><dd>1.1</dd>
+    <dt>Status</dt><dd>FINAL — approved for current Ailin iOS analytics disclosures</dd>
+    <dt>Effective date</dt><dd>August 20, 2026</dd>
     <dt>Operator and data controller</dt><dd>Ailin Labs LLC</dd>
     <dt>Privacy contact</dt><dd><a href="mailto:support@ailinlabs.com">support@ailinlabs.com</a></dd>
     <dt>Public policy URL</dt><dd><a href="https://ailinlabs.com/privacy.html">https://ailinlabs.com/privacy.html</a></dd>
@@ -71,7 +71,7 @@
 
 <p>This Privacy Policy explains how the legal operator identified above (“Ailin,” “we,” “us,” or “our”) handles information in connection with the Ailin iOS application (the “App”).</p>
 
-<p>Ailin is designed to work primarily on your device. The App does not require an account. In the current version, Ailin does not receive your in-app progress, content selections, preferences, or use of support materials.</p>
+<p>Ailin is designed to work primarily on your device and does not require an account. Your saved progress and preferences remain on your device. The App sends limited pseudonymous product-usage events and crash diagnostics described below; it does not send user-entered text or the prose you read.</p>
 
 <p>This Policy applies to:</p>
 <ul>
@@ -94,8 +94,8 @@
     <tr><td>Ailin server or cloud account</td><td>No</td></tr>
     <tr><td>Advertising</td><td>No</td></tr>
     <tr><td>Cross-app or cross-site tracking</td><td>No</td></tr>
-    <tr><td>Analytics SDK</td><td>No</td></tr>
-    <tr><td>Third-party crash-reporting SDK</td><td>No</td></tr>
+    <tr><td>Analytics SDK</td><td>Yes — Amplitude, limited pseudonymous product events</td></tr>
+    <tr><td>Third-party crash-reporting SDK</td><td>Yes — Firebase Crashlytics</td></tr>
     <tr><td>AI chat or submission of user-entered text</td><td>No</td></tr>
     <tr><td>Location access</td><td>No</td></tr>
     <tr><td>Camera, photo library, or microphone access</td><td>No</td></tr>
@@ -127,7 +127,23 @@
 
 <p>Local App information generally remains on your device until you remove it through available device or App controls or delete the App. Depending on your Apple settings, some App data may be included in a device or iCloud backup managed by Apple. You control those backups through your Apple settings.</p>
 
-<h3 id="s3-2">3.2 Purchases and subscriptions</h3>
+<h3 id="s3-analytics">3.2 Product analytics and crash diagnostics</h3>
+
+<p>To understand whether features work and to improve reliability, the App uses Amplitude for product analytics and Firebase Crashlytics for crash reporting. Analytics uses a random installation identifier and may include an app-session identifier, App version and build, language, visual theme, subscription tier, stable identifiers for prepared content, entry point, completion or exit status, scroll-depth milestones, active-duration measurements, and safe categories of purchase or content-loading failures.</p>
+
+<p>Product analytics may describe App lifecycle events, onboarding progress and a broad self-selected onboarding fear group, card, tool, practice, SOS, Support, Understanding, Sleep, paywall, and subscription-funnel interactions, content-load failure categories, audio playback controls, and player seek direction or time deltas. These events use stable technical identifiers such as card IDs, tool IDs, topic IDs, item IDs, tiers, and entry points; they do not include localized titles, card body text, support prose, or user-entered text.</p>
+
+<p>Some events, such as card-read completion, tool completion, or practice completion, are inferred from limited technical signals such as active time, scroll-depth thresholds, and whether the App is in the foreground. These events do not mean that Ailin knows what you read, understood, felt, believed, or experienced medically.</p>
+
+<p>We use analytics to evaluate aggregate product behavior, reliability, content usefulness, onboarding flow, and subscription funnel performance. We do not use analytics events to create an individual medical, psychological, advertising, or health-related behavioral profile.</p>
+
+<p>We do not send your name, email address, advertising identifier, precise location, contacts, emergency-contact details, user-entered text, card or support prose, anxiety rating, diagnosis, HealthKit data, raw StoreKit error messages, receipts, or payment-card information to Amplitude. IP-based location collection, carrier collection, IDFV collection, automatic screen or element capture, and session replay are disabled in the App's Amplitude configuration.</p>
+
+<p>Crashlytics may receive technical crash information such as App and operating-system versions, device type, stack traces, and safe diagnostic attributes. We do not intentionally attach user-entered text, content prose, or health information to crash reports.</p>
+
+<p>You can turn product analytics off in Ailin Settings. Turning it off stops future Amplitude events and resets the App's analytics identifier. Crash reporting is used separately for App reliability.</p>
+
+<h3 id="s3-2">3.3 Purchases and subscriptions</h3>
 
 <p>If you purchase a subscription or other paid feature, Apple processes the transaction through the App Store. Apple may process your Apple ID, payment and billing information, transaction records, device information, and purchase history under Apple’s own terms and privacy policy.</p>
 
@@ -172,7 +188,7 @@
   <li>biometric data;</li>
   <li>user-created journal entries or chat messages;</li>
   <li>diagnostic assessments;</li>
-  <li>analytics or behavioral profiles;</li>
+  <li>advertising or health-related behavioral profiles;</li>
   <li>third-party advertising data; or</li>
   <li>data for cross-app or cross-site tracking.</li>
 </ul>
@@ -213,7 +229,7 @@
 
 <h3 id="s6-1">6.1 Service providers and professional advisers</h3>
 
-<p>We may use service providers to operate a support email address, host the public Privacy Policy, maintain business records, or provide technical infrastructure. We may also share information with professional advisers when reasonably necessary. These recipients may use the information only for the relevant service or professional purpose and must be subject to appropriate confidentiality, security, and data-protection obligations.</p>
+<p>We use Amplitude, Inc. to process the limited product-analytics events described above and Google LLC's Firebase Crashlytics to process crash diagnostics. We may also use providers to operate support email, host this Policy, maintain business records, or provide technical infrastructure, and may share information with professional advisers when reasonably necessary. These recipients may use information only to provide the relevant service or professional purpose and are subject to appropriate confidentiality, security, and data-protection obligations.</p>
 
 <h3 id="s6-2">6.2 Apple</h3>
 
@@ -240,6 +256,8 @@
 
 <p>Ailin cannot remotely view or delete information that exists only on your device. You can remove it through any available reset controls or by deleting the App. Information contained in an Apple-managed backup is controlled through your Apple backup settings.</p>
 
+<p>Product analytics and crash diagnostics are retained only for as long as reasonably necessary for product measurement, reliability, security, and legal compliance, subject to the retention settings and deletion capabilities of Amplitude and Firebase. You can stop future product analytics and reset the local analytics identifier in Ailin Settings. You may also contact us about deletion or another privacy right.</p>
+
 <h3 id="s7-2">7.2 Support communications</h3>
 
 <p>We generally retain support and feedback communications for no longer than 12 months after the request is resolved, unless a longer period is reasonably necessary for security, fraud prevention, legal compliance, dispute resolution, or legal claims.</p>
@@ -258,7 +276,7 @@
 
 <h2 id="s9">9. International Processing</h2>
 
-<p>The legal operator of Ailin is based in the United States. If you contact us from another country, your message and related information may be processed in the United States and in countries where our service providers operate.</p>
+<p>The legal operator of Ailin is based in the United States. Analytics is configured for Amplitude's United States region. Communications, analytics events, and crash diagnostics may be processed in the United States and in countries where our service providers operate.</p>
 
 <p>Where applicable law requires safeguards for an international transfer, we will use an appropriate lawful mechanism. Privacy laws in the United States or another destination may differ from those where you live.</p>
 
@@ -318,7 +336,7 @@
 
 <p style="margin-top:1.25rem">Please do not use this contact for emergency or crisis assistance. Ailin is not an emergency service, and this contact is not monitored for urgent safety situations. If you or another person may be in immediate danger, contact local emergency services or an appropriate verified crisis resource in your country.</p>
 
-<p>This Privacy Policy describes the current Ailin iOS version. It must be reviewed and updated before release if Ailin adds accounts, servers, cloud sync, analytics, advertising, AI features, user-entered content, push notifications that transmit identifiers, location, HealthKit access, or other data-processing features.</p>
+<p>This Privacy Policy describes the current Ailin iOS version. It must be reviewed and updated before release if Ailin materially changes its accounts, servers, cloud sync, analytics, advertising, AI features, user-entered content, push notifications, location, HealthKit access, or other data-processing features.</p>
 
 </div>
 </main>
