@@ -4189,6 +4189,16 @@ tbody tr:last-child td { border-bottom: none; }
 }
 
 @media (max-width: 52rem) {
+  .landing-v5 .v4-thought-heading {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.85rem;
+  }
+
+  .landing-v5 .v4-thought-heading > * {
+    min-width: 0;
+    max-width: none;
+  }
+
   .landing-v5 .v4-hero .v3-hero-grid,
   .v5-section-heading,
   .v5-founder-grid {
