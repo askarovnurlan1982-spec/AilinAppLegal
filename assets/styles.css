@@ -2377,6 +2377,19 @@ tbody tr:last-child td { border-bottom: none; }
   box-shadow: 0 12px 28px rgba(47, 139, 147, 0.2);
 }
 
+.v5-app-store-link {
+  display: inline-flex;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  line-height: 0;
+}
+
+.v5-app-store-link img {
+  width: auto;
+  height: 48px;
+  max-width: 100%;
+}
+
 .v3-boundaries {
   padding-top: 1.8rem !important;
   background: #f7f9fa;
@@ -4276,6 +4289,10 @@ tbody tr:last-child td { border-bottom: none; }
 }
 
 @media (max-width: 36rem) {
+  .landing-v5 .landing-header .site-nav > a.v3-nav-cta {
+    display: inline-flex;
+  }
+
   .landing-v5 .v4-hero {
     padding-block: 2.25rem !important;
   }
@@ -4372,5 +4389,9 @@ tbody tr:last-child td { border-bottom: none; }
 
   .v5-safety summary span {
     display: none;
+  }
+
+  .v5-app-store-link img {
+    height: 44px;
   }
 }
