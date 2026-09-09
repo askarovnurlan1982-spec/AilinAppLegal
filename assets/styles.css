@@ -4213,6 +4213,15 @@ tbody tr:last-child td { border-bottom: none; }
     width: min(50%, 220px);
   }
 
+  .landing-v5 .v4-thought-float--one,
+  .landing-v5 .v4-thought-float--three {
+    left: 0;
+  }
+
+  .landing-v5 .v4-thought-float--two {
+    right: 0;
+  }
+
   .v5-section-heading h2,
   .v5-section-heading > p,
   .v5-section-intro,
@@ -4290,7 +4299,9 @@ tbody tr:last-child td { border-bottom: none; }
   }
 
   .landing-v5 .v4-thought-float--three {
-    display: none;
+    display: block;
+    bottom: 8%;
+    left: 0;
   }
 
   .v5-section-heading h2,
