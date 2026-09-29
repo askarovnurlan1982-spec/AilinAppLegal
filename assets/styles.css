@@ -2447,7 +2447,7 @@ tbody tr:last-child td { border-bottom: none; }
 }
 
 @media (max-width: 66rem) {
-  .v3-header .site-nav > a:not(.lang-switch):not(.v3-nav-cta) {
+  .v3-header .site-nav > a:not(.lang-switch):not(.v3-nav-cta):not(.header-guide-link) {
     display: none;
   }
   .v3-hero-grid {
@@ -2550,6 +2550,10 @@ tbody tr:last-child td { border-bottom: none; }
   }
   .v3-header .site-nav {
     gap: 0.55rem;
+  }
+  .landing-v5 .landing-header .header-guide-link {
+    font-size: 0.78rem;
+    white-space: nowrap;
   }
   .v3-nav-cta {
     min-height: 36px;
@@ -4344,6 +4348,13 @@ tbody tr:last-child td { border-bottom: none; }
   }
 }
 
+@media (max-width: 42rem) {
+  .landing-v5 .landing-header .site-nav > a.header-guide-link,
+  .landing-v5 .landing-header .site-nav > a.v3-nav-cta {
+    display: inline-flex;
+  }
+}
+
 @media (max-width: 36rem) {
   .landing-v5 .landing-header .site-nav > a.v3-nav-cta {
     display: inline-flex;
@@ -4449,6 +4460,35 @@ tbody tr:last-child td { border-bottom: none; }
 
   .v5-app-store-link img {
     height: 44px;
+  }
+}
+
+@media (max-width: 24rem) {
+  .landing-v5 .landing-header .wrap {
+    gap: 0.45rem;
+    padding-inline: 0.75rem;
+  }
+
+  .landing-v5 .landing-header .brand span {
+    display: none;
+  }
+
+  .landing-v5 .landing-header .site-nav {
+    gap: 0.4rem;
+  }
+
+  .landing-v5 .landing-header .header-guide-link,
+  .landing-v5 .landing-header .lang-switch,
+  .landing-v5 .landing-header .v3-nav-cta {
+    font-size: 0.7rem !important;
+  }
+
+  .landing-v5 .landing-header .lang-switch {
+    padding-inline: 0.5rem;
+  }
+
+  .landing-v5 .landing-header .v3-nav-cta {
+    padding-inline: 0.55rem;
   }
 }
 
@@ -6441,5 +6481,70 @@ tbody tr:last-child td { border-bottom: none; }
 
   .guide-page.guide-article-page .guide-product-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Guides catalog: compact homepage-scale intro ---------- */
+
+.guide-page.guide-hub-page .guide-hub-hero {
+  min-height: 0;
+  padding-block: clamp(2rem, 2.8vw, 2.5rem) clamp(1.25rem, 1.8vw, 1.5rem);
+}
+
+.guide-page.guide-hub-page .guide-hub-intro {
+  min-height: 0;
+}
+
+.guide-page.guide-hub-page .guide-eyebrow {
+  margin-bottom: 0.5rem;
+}
+
+.guide-page.guide-hub-page .guide-hub-intro h1 {
+  max-width: 17ch;
+  margin: 0 0 0.75rem;
+  font-size: clamp(3rem, 3.35vw, 3.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.038em;
+}
+
+.guide-page.guide-hub-page .guide-lede {
+  line-height: 1.55;
+}
+
+.guide-page.guide-hub-page .guide-hub-list {
+  padding-block: clamp(0.75rem, 1.4vw, 1.25rem) clamp(3rem, 5vw, 4.5rem);
+}
+
+.guide-page.guide-hub-page .guide-hub-list h2 {
+  margin: 0 0 0.875rem;
+}
+
+@media (max-width: 64rem) {
+  .guide-page.guide-hub-page .guide-hub-hero {
+    padding-block: 1.75rem 1rem;
+  }
+
+  .guide-page.guide-hub-page .guide-hub-intro h1 {
+    font-size: clamp(2.5rem, 4.3vw, 2.75rem);
+  }
+}
+
+@media (max-width: 42rem) {
+  .guide-page.guide-hub-page .guide-hub-hero {
+    padding-block: 1.5rem 0.875rem;
+  }
+
+  .guide-page.guide-hub-page .guide-eyebrow {
+    margin-bottom: 0.4rem;
+  }
+
+  .guide-page.guide-hub-page .guide-hub-intro h1 {
+    margin-bottom: 0.625rem;
+    font-size: clamp(2.125rem, 8.8vw, 2.375rem);
+    line-height: 1.08;
+  }
+
+  .guide-page.guide-hub-page .guide-hub-list h2 {
+    margin-bottom: 0.75rem;
   }
 }
