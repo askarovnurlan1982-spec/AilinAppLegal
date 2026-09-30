@@ -56,7 +56,7 @@
 
   <url>
     <loc>https://ailinlabs.com/guides/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://ailinlabs.com/guides/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://ailinlabs.com/ru/guides/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ailinlabs.com/guides/"/>
@@ -64,7 +64,7 @@
 
   <url>
     <loc>https://ailinlabs.com/ru/guides/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://ailinlabs.com/guides/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://ailinlabs.com/ru/guides/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ailinlabs.com/guides/"/>
@@ -84,6 +84,22 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://ailinlabs.com/guides/panic-attacks/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://ailinlabs.com/ru/guides/panic-attacks/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ailinlabs.com/guides/panic-attacks/"/>
+  </url>
+
+  <url>
+    <loc>https://ailinlabs.com/guides/intrusive-thoughts/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ailinlabs.com/guides/intrusive-thoughts/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ailinlabs.com/ru/guides/intrusive-thoughts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ailinlabs.com/guides/intrusive-thoughts/"/>
+  </url>
+
+  <url>
+    <loc>https://ailinlabs.com/ru/guides/intrusive-thoughts/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ailinlabs.com/guides/intrusive-thoughts/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ailinlabs.com/ru/guides/intrusive-thoughts/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ailinlabs.com/guides/intrusive-thoughts/"/>
   </url>
 
 </urlset>

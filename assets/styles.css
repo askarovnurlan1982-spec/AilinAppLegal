@@ -6548,3 +6548,244 @@ tbody tr:last-child td { border-bottom: none; }
     margin-bottom: 0.75rem;
   }
 }
+
+/* ---------- Intrusive Thoughts guide (article-scoped) ---------- */
+
+.guide-page.guide-hub-page .guide-card + .guide-card {
+  margin-top: 1.25rem;
+}
+
+.guide-page.intrusive-thoughts-page .guide-article-hero {
+  padding-block: clamp(1.75rem, 3.5vw, 3rem) clamp(2.5rem, 4vw, 3.75rem);
+}
+
+.guide-page.intrusive-thoughts-page .guide-hero-grid h1 {
+  max-width: 21ch;
+  font-size: clamp(2.75rem, 4vw, 3.45rem);
+  line-height: 1.05;
+}
+
+.guide-page.intrusive-thoughts-page .guide-section,
+.guide-page.intrusive-thoughts-page .guide-section + .guide-section {
+  padding-block: clamp(2.75rem, 4.2vw, 4rem);
+}
+
+.guide-page.intrusive-thoughts-page .intrusive-media-grid,
+.guide-page.intrusive-thoughts-page .intrusive-threat-grid,
+.guide-page.intrusive-thoughts-page .intrusive-product-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(17rem, 20rem);
+  align-items: start;
+  gap: clamp(2rem, 5vw, 4.5rem);
+  max-width: var(--guide-wide);
+}
+
+.guide-page.intrusive-thoughts-page .intrusive-media-section,
+.guide-page.intrusive-thoughts-page .intrusive-threat-section {
+  padding-block: clamp(2.45rem, 3.7vw, 3.5rem);
+}
+
+.guide-page.intrusive-thoughts-page .intrusive-media-grid > .guide-prose,
+.guide-page.intrusive-thoughts-page .intrusive-threat-grid > .guide-prose,
+.guide-page.intrusive-thoughts-page .intrusive-product-grid > .guide-prose {
+  max-width: none;
+}
+
+.guide-page.intrusive-thoughts-page .intrusive-screen-panel {
+  width: min(100%, 20rem);
+  margin: 0;
+  align-self: start;
+  justify-self: end;
+  padding: clamp(0.8rem, 1.5vw, 1.1rem);
+  border: 1px solid rgba(47, 139, 147, 0.13);
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at 84% 12%, rgba(155, 123, 197, 0.2), transparent 18rem),
+    linear-gradient(145deg, rgba(222, 244, 243, 0.94), rgba(245, 241, 251, 0.96));
+  box-shadow: 0 22px 55px rgba(29, 78, 88, 0.08);
+}
+
+.guide-page.intrusive-thoughts-page .intrusive-screen-link {
+  display: block;
+  border-radius: 22px;
+}
+
+.guide-page.intrusive-thoughts-page .intrusive-screen-link:focus-visible {
+  outline: 3px solid rgba(47, 139, 147, 0.52);
+  outline-offset: 4px;
+}
+
+.guide-page.intrusive-thoughts-page .intrusive-screen-panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+  object-fit: contain;
+}
+
+.guide-page.intrusive-thoughts-page .intrusive-concept-stack > section,
+.guide-page.intrusive-thoughts-page .intrusive-factor-grid > section {
+  padding: 1.35rem 1.45rem;
+  border: 1px solid rgba(47, 139, 147, 0.13);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 18px 42px rgba(29, 78, 88, 0.06);
+}
+
+.guide-page.intrusive-thoughts-page .intrusive-concept-stack > section + section {
+  margin-top: 1rem;
+}
+
+.guide-page.intrusive-thoughts-page .intrusive-concept-stack > section p:last-child,
+.guide-page.intrusive-thoughts-page .intrusive-factor-grid > section p:last-child {
+  margin-bottom: 0;
+}
+
+.guide-page.intrusive-thoughts-page .intrusive-factor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.guide-page.intrusive-thoughts-page .intrusive-cycle li {
+  min-height: 9rem;
+  align-items: flex-start;
+}
+
+.guide-page.intrusive-thoughts-page .intrusive-cycle strong {
+  max-width: none;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.guide-page.intrusive-thoughts-page .guide-section--action {
+  background:
+    radial-gradient(circle at 90% 12%, rgba(74, 171, 224, 0.22), transparent 20rem),
+    radial-gradient(circle at 8% 88%, rgba(155, 123, 197, 0.14), transparent 23rem),
+    linear-gradient(145deg, #e7f5f6 0%, #ffffff 76%);
+}
+
+.guide-page.intrusive-thoughts-page .intrusive-product-grid {
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+}
+
+.guide-page.intrusive-thoughts-page .intrusive-download-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 13rem;
+  padding: 2rem;
+  border: 1px solid rgba(47, 139, 147, 0.13);
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.68);
+  box-shadow: 0 22px 55px rgba(29, 78, 88, 0.07);
+}
+
+.guide-page.intrusive-thoughts-page .guide-sources a {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 64rem) {
+  .guide-page.intrusive-thoughts-page .intrusive-media-grid,
+  .guide-page.intrusive-thoughts-page .intrusive-threat-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(18rem, 20rem);
+    gap: 2.25rem;
+  }
+
+  .guide-page.intrusive-thoughts-page .guide-hero-grid h1 {
+    font-size: clamp(2.6rem, 5vw, 3.2rem);
+  }
+}
+
+@media (max-width: 52rem) {
+  .guide-page.intrusive-thoughts-page .intrusive-media-grid,
+  .guide-page.intrusive-thoughts-page .intrusive-threat-grid,
+  .guide-page.intrusive-thoughts-page .intrusive-product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-page.intrusive-thoughts-page .intrusive-screen-panel {
+    width: min(100%, 19rem);
+    justify-self: center;
+  }
+
+  .guide-page.intrusive-thoughts-page .intrusive-media-grid,
+  .guide-page.intrusive-thoughts-page .intrusive-threat-grid {
+    row-gap: 2.1rem;
+  }
+
+  .guide-page.intrusive-thoughts-page .intrusive-download-panel {
+    min-width: 0;
+    justify-content: flex-start;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 42rem) {
+  .guide-page.intrusive-thoughts-page .guide-article-hero {
+    padding-block: 1.35rem 2rem;
+  }
+
+  .guide-page.intrusive-thoughts-page .guide-hero-grid h1 {
+    max-width: 22ch;
+    font-size: clamp(2.15rem, 9.6vw, 2.65rem);
+    line-height: 1.07;
+  }
+
+  .guide-page.intrusive-thoughts-page .guide-section,
+  .guide-page.intrusive-thoughts-page .guide-section + .guide-section {
+    padding-block: 2.1rem;
+  }
+
+  .guide-page.intrusive-thoughts-page .intrusive-media-section,
+  .guide-page.intrusive-thoughts-page .intrusive-threat-section {
+    padding-block: 1.85rem;
+  }
+
+  .guide-page.intrusive-thoughts-page .intrusive-media-grid,
+  .guide-page.intrusive-thoughts-page .intrusive-threat-grid,
+  .guide-page.intrusive-thoughts-page .intrusive-product-grid {
+    gap: 1.5rem;
+  }
+
+  .guide-page.intrusive-thoughts-page .intrusive-media-grid,
+  .guide-page.intrusive-thoughts-page .intrusive-threat-grid {
+    row-gap: 1.3rem;
+  }
+
+  .guide-page.intrusive-thoughts-page .intrusive-screen-panel {
+    width: min(100%, 18rem);
+    padding: 0.7rem;
+    border-radius: 24px;
+  }
+
+  .guide-page.intrusive-thoughts-page .intrusive-screen-panel img {
+    border-radius: 18px;
+  }
+
+  .guide-page.intrusive-thoughts-page .intrusive-factor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-page.intrusive-thoughts-page .intrusive-cycle li {
+    min-height: auto;
+  }
+
+  .guide-page.intrusive-thoughts-page .intrusive-concept-stack > section,
+  .guide-page.intrusive-thoughts-page .intrusive-factor-grid > section {
+    padding: 1.1rem;
+  }
+
+  .guide-page.intrusive-thoughts-page .intrusive-download-panel {
+    padding: 1.25rem;
+    border-radius: 22px;
+  }
+}
+
+@media (max-width: 24rem) {
+  .guide-page.intrusive-thoughts-page .guide-hero-grid h1 {
+    font-size: clamp(2rem, 10.5vw, 2.35rem);
+  }
+}
